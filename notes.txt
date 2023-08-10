@@ -1,0 +1,14 @@
+
+For installation of Playwright & cucumber, follow the below instructions.
+1. Create a project folder and open VScode on it.
+2. Click on VS code extension and write playwright and select the first " run playwright test"
+3. Ctr+shift+P and write playwright and select install playwright
+
+next install cucumber
+
+1. in vscode extension, write cucumber and select "cucumber for visual studio"
+2. on cmd, write : npm i @cucumber/cucumber --save-dev
+3. npm i ts-node --save-dev
+
+
+
