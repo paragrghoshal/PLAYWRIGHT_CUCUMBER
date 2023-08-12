@@ -4,12 +4,12 @@
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/"
+            "tests/features/"
         ],
         "publishQuiet": true,
         "dryRun": false,
         "require": [
-            "src/test/steps/*.ts",
+            "src/steps/*.ts",
             "src/hooks/*.ts"
         ],
         "requireModule": [
