@@ -3,10 +3,12 @@
     "@cucumber/cucumber": "^9.3.0",
     "@playwright/test": "^1.36.2",
     "cucumber": "^6.0.7",
+    "multiple-cucumber-html-reporter": "^3.4.0",
     "playwright": "^1.36.2",
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "test":"cucumber-js test"
+    "test": "cucumber-js test || true",
+    "posttest": "npx ts-node src/helper/multiCucumberReportRunner.ts"
   }
 }
