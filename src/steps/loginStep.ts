@@ -1,11 +1,16 @@
 import { Given, Then, When, setDefaultTimeout } from "@cucumber/cucumber";
 import { fixture } from "../hooks/fixture";
+import BasePage from "../pageObjects/basePages/BasePage";
 
-setDefaultTimeout(60*1000*2);
+
+setDefaultTimeout(60 * 1000 * 2);
 
 Given('User navigates to the application', async function () {
+  let basepage: BasePage
+  basepage = new BasePage(fixture.page);
+  await basepage.launchApplication(process.env.BASEURL);
+  //await fixture.page.goto(process.env.BASEURL);
 
-  await fixture.page.goto(process.env.BASEURL);
   //await fixture.logger.info(`navigated to usr : ${process.env.BASEURL}`);
   console.log("PARAG**************");
 
