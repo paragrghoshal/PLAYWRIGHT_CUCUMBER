@@ -1,0 +1,28 @@
+.git/
+.github/
+.DS_Store/
+.hg/
+.vscode/
+.idea/
+.gitignore/
+.hgignore/
+# node_modules/
+*.log
+
+# Ignore executables/binaries
+*.exe
+*.bin
+**/*/bin
+
+# Ignore media files
+*.png
+*.jpeg
+*.jpg
+*.mp4
+
+# Ignore documentation
+*.rst
+*.md
+
+# Ignore sensitive data
+credentials.yml

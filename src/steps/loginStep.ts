@@ -6,7 +6,7 @@ setDefaultTimeout(60*1000*2);
 Given('User navigates to the application', async function () {
 
   await fixture.page.goto(process.env.BASEURL);
-  await fixture.logger.info(`navigated to usr : ${process.env.BASEURL}`);
+  //await fixture.logger.info(`navigated to usr : ${process.env.BASEURL}`);
   console.log("PARAG**************");
 
 });
