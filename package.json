@@ -7,7 +7,8 @@
     "dotenv": "^16.3.1",
     "multiple-cucumber-html-reporter": "^3.4.0",
     "playwright": "^1.36.2",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "winston": "^3.10.0"
   },
   "scripts": {
     "test": "cross-env ENV=prod cucumber-js test || true",
