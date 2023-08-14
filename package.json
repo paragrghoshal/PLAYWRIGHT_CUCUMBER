@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "cross-env ENV=prod cucumber-js test || true",
-    "posttest": "npx ts-node src/helper/multiCucumberReportRunner.ts",
+    "posttest": "npx ts-node src/helper/util/multiCucumberReportRunner.ts",
     "test:failed": "cross-env ENV=prod cucumber-js -p rerun_profile @rerun.txt"
   }
 }

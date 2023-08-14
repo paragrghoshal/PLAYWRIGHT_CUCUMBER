@@ -1,6 +1,6 @@
 import { After, AfterAll, AfterStep, Before, BeforeAll } from "@cucumber/cucumber";
 import { Browser, BrowserContext } from "@playwright/test";
-import { pageFixture } from "./pageFixture";
+import { fixture } from "./fixture";
 import { invokeBrowser } from "../helper/browser/browserManager";
 import { getEnv } from "../helper/env/env";
 import { createLogger } from "winston";
@@ -18,14 +18,14 @@ Before(async function ({pickle}) {
     const scenarioName = pickle.name + pickle.id;
     context = await browser.newContext();
     const page = await context.newPage();
-    pageFixture.page = page;
-    pageFixture.logger = await createLogger(options(scenarioName));
+    fixture.page = page;
+    fixture.logger = await createLogger(options(scenarioName));
 });
 
 After(async function () {
-    await pageFixture.page.close();
+    await fixture.page.close();
     await context.close();
-    pageFixture.logger.close();
+    fixture.logger.close();
 });
 
 AfterAll(async function(){
@@ -35,7 +35,7 @@ AfterAll(async function(){
 });
 
 AfterStep(async function({pickle,result}){
-    const img = await pageFixture.page.screenshot({path:`./test-results/screenshots/${pickle.name}.png`, type:"png"});
+    const img = await fixture.page.screenshot({path:`./test-results/screenshots/${pickle.name}.png`, type:"png"});
     await this.attach(img,"image/png");
 });
 
