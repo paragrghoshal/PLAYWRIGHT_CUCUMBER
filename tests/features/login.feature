@@ -2,10 +2,14 @@ Feature: User Authentication tests
 
   Background: 
     Given User navigates to the application
-    And User click on the login link
+    # And User click on the login link
 
-  Scenario: Login should be success
-    And User enter the username as "ortoni11"
-    And User enter the password as "Pass1234"
-    When User click on the login button
-    Then Login should be success
+  Scenario Outline: Login should be success
+    And User entered the product '<productname>'
+    When User click search button
+    Then '<productname>' is displayed on product page
+
+    Examples:
+        | productname |
+        | laptop |
+        | smart watch|

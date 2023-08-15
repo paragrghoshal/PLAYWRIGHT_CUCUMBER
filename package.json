@@ -2,6 +2,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^9.3.0",
     "@playwright/test": "^1.36.2",
+    "@saucelabs/cucumber-reporter": "^0.4.1",
     "cross-env": "^7.0.3",
     "cucumber": "^6.0.7",
     "dotenv": "^16.3.1",
@@ -12,9 +13,9 @@
     "winston": "^3.10.0"
   },
   "scripts": {
-    "test": "cross-env ENV=prod cucumber-js test || true",
+    "test": "cucumber-js test || true",
     "posttest": "npx ts-node src/helper/util/multiCucumberReportRunner.ts",
-    "test:failed": "cross-env ENV=prod cucumber-js -p rerun_profile @rerun.txt",
-    "sauce": "saucectl run"
+    "test:failed": "cucumber-js -p rerun_profile @rerun.txt",
+    "onsaucelabs": "saucectl run && npx ts-node src/helper/util/multiCucumberReportRunner.ts"
   }
 }

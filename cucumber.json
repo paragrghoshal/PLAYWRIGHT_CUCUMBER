@@ -7,7 +7,7 @@
             "tests/features/"
         ],
         "publishQuiet": true,
-        "dryRun": true,
+        "dryRun": false,
         "require": [
             "src/steps/*.ts",
             "src/hooks/*.ts"
@@ -21,7 +21,7 @@
             "json:test-results/reports/json/cucumber-report.json",
             "rerun:@rerun.txt"
         ],
-        "parallel":2
+        "parallel": 2
     },
     "rerun_profile": {
         "formatOptons": {
@@ -40,8 +40,9 @@
             "progress-bar",
             "html:test-results/reports/html/cucumber-report.html",
             "json:test-results/reports/json/cucumber-report.json",
+            "@saucelabs/cucumber-reporter",
             "rerun:@rerun.txt"
         ],
-        "parallel":2
+        "parallel": 2
     }
 }
