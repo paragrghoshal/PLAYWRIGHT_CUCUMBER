@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "attachments": [],
+  "suites": [
+    {
+      "name": "tests\\features\\login.feature",
+      "status": "passed",
+      "metadata": {},
+      "suites": [
+        {
+          "name": "Login should be success",
+          "status": "passed",
+          "metadata": {
+            "attempt": 0,
+            "sourceLocation": {
+              "uri": "tests\\features\\login.feature",
+              "line": 14
+            }
+          },
+          "suites": [],
+          "attachments": [],
+          "tests": [
+            {
+              "name": "Before",
+              "status": "passed",
+              "startTime": "2023-08-16T03:34:42.905Z",
+              "duration": 348,
+              "metadata": {},
+              "attachments": []
+            },
+            {
+              "name": "Given User navigates to the application",
+              "status": "passed",
+              "startTime": "2023-08-16T03:34:42.905Z",
+              "duration": 3062,
+              "metadata": {},
+              "attachments": [
+                {
+                  "name": "2c48eada-ce93-44df-be70-3c5573984ce2.log",
+                  "contentType": "image/png",
+                  "path": ""
+                }
+              ]
+            },
+            {
+              "name": "And User entered the product 'laptop'",
+              "status": "passed",
+              "startTime": "2023-08-16T03:34:42.915Z",
+              "duration": 1172,
+              "metadata": {},
+              "attachments": [
+                {
+                  "name": "2c48eada-ce93-44df-be70-3c5573984ce2.log",
+                  "contentType": "image/png",
+                  "path": ""
+                }
+              ]
+            },
+            {
+              "name": "When User click search button",
+              "status": "passed",
+              "startTime": "2023-08-16T03:34:42.916Z",
+              "duration": 1031,
+              "metadata": {},
+              "attachments": [
+                {
+                  "name": "2c48eada-ce93-44df-be70-3c5573984ce2.log",
+                  "contentType": "image/png",
+                  "path": ""
+                }
+              ]
+            },
+            {
+              "name": "Then 'laptop' is displayed on product page",
+              "status": "passed",
+              "startTime": "2023-08-16T03:34:42.916Z",
+              "duration": 493,
+              "metadata": {},
+              "attachments": [
+                {
+                  "name": "2c48eada-ce93-44df-be70-3c5573984ce2.log",
+                  "contentType": "image/png",
+                  "path": ""
+                }
+              ]
+            },
+            {
+              "name": "After",
+              "status": "passed",
+              "startTime": "2023-08-16T03:34:42.917Z",
+              "duration": 66,
+              "metadata": {},
+              "attachments": []
+            }
+          ]
+        }
+      ],
+      "attachments": [],
+      "tests": []
+    }
+  ],
+  "metadata": {}
+}
