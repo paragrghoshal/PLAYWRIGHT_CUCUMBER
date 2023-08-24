@@ -10,12 +10,21 @@
     "playwright": "^1.36.2",
     "saucectl": "^0.155.0",
     "ts-node": "^10.9.1",
-    "winston": "^3.10.0"
+    "winston": "^3.10.0",
+    "@types/node": "^20.5.0",
+    "axios": "^1.4.0",
+    "btoa": "^1.2.1",
+    "date-format": "^4.0.14",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "typescript": "^5.1.6",
+    "zip-a-folder": "^2.0.0"
   },
   "scripts": {
     "test": "cucumber-js test || true",
     "posttest": "npx ts-node src/helper/util/multiCucumberReportRunner.ts",
     "test:failed": "cucumber-js -p rerun_profile @rerun.txt",
-    "onsaucelabs": "saucectl run && npx ts-node src/helper/util/multiCucumberReportRunner.ts"
+    "onsaucelabs": "saucectl run && npx ts-node src/helper/util/multiCucumberReportRunner.ts",
+    "jira-upload":"npx ts-node jiraRunner/JiraXrayTestManagement.ts"
   }
 }
