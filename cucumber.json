@@ -19,6 +19,7 @@
             "progress-bar",
             "html:test-results/reports/html/cucumber-report.html",
             "json:test-results/reports/json/cucumber-report.json",
+            "junit:test-results/reports/junit/cucumber-report.xml",
             "rerun:@rerun.txt"
         ],
         "parallel": 0
